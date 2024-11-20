@@ -1,79 +1,98 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Notes App
 
-# Getting Started
+A colorful and user-friendly note-taking app with light and dark theme support. Organize your tasks, thoughts, and ideas with a sleek and modern interface.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **Add Notes**: Easily create new notes to keep track of your ideas.
+- **View Notes**: Browse through your notes in a structured and visually appealing grid layout.
+- **Edit Notes**: Modify and update your notes seamlessly.
+- **Delete Notes**: Remove unnecessary notes with ease.
+- **Search Notes**: Quickly find notes using the search bar.
+- **Theme Options**: Switch between light and dark themes to suit your preferences.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Installation
 
-To start Metro, run the following command from the _root_ of your React Native project:
-
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+1. Clone the repository:
 
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+git clone https://github.com/crncck/Notes-App.git
 ```
 
-### For iOS
-
+2. Navigate to the project directory:
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+cd Notes-App
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+3. Install dependencies:
+```bash
+npm install
+```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+4. Run the app:
+```bash
+npx react-native run-ios
+```
 
-## Step 3: Modifying your App
+## Usage
 
-Now that you have successfully run the app, let's modify it.
+1. Open the app on your device or emulator.
+2. Use the floating "+" button to add new notes.
+3. Tap on a note to view or edit its content.
+4. Use the search bar to quickly filter notes.
+5. Toggle the theme using the menu for a light or dark experience.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## Folder Structure
 
-## Congratulations! :tada:
+The app's file structure:
 
-You've successfully run and modified your React Native App. :partying_face:
+```
+src/ 
+├── atoms                    # Jotai atoms for state management 
+│ ├── noteAtoms.js           # Atoms for notes 
+│ └── themeAtom.js           # Atom for theme toggle 
+├── components               # Reusable UI components 
+│ ├── AnimatedSearchButton  
+│ ├── Button 
+│ ├── Header
+│ ├── IconButton 
+│ └── Modals 
+│ │ └── AddNoteModal 
+│ │ └── MenuModal 
+│ └── NoteItem 
+├── config
+│ └── colors.js              # App-wide color definitions 
+├── context                  # Context API setup 
+│ └── NotesContext.js        # Notes context provider 
+├── screens                  # Main application screens 
+│ ├── DetailScreen 
+│ ├── HomeScreen 
+├── App.js                   # Entry point of the application
+```
 
-### Now what?
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+## Technologies Used
 
-# Troubleshooting
+- **[Jotai](https://jotai.org/)**: Enables storing notes and theme preference in atoms and helps to manage theme globally.
+- **[AsyncStorage](https://react-native-async-storage.github.io/async-storage/)**: Enables local storage for persisting user notes. Ensures that notes and theme preferences remain saved even when the app is closed and reopened.
+- **[React Navigation](https://reactnavigation.org/)**: Manages seamless navigation between **HomeScreen** (notes list) and **DetailScreen** (view/edit note details).
+- **[Context API](https://react.dev/reference/react/Context)**: Provides a global context for accessing shared functionality and data, such as handling note-related actions (e.g., adding/deleting/editing).
+- **[Masonry Flashlist](https://shopify.github.io/flash-list/docs/masonry-flash-list)**: Used to display notes in a visually appealing **masonry grid layout** with high performance.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## Screenshots
 
-# Learn More
+### App Icon
+<img src="https://i.ibb.co/8rwrfRY/icon.png" alt="converter" width="100"/>
 
-To learn more about React Native, take a look at the following resources:
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+### App Screens
+<img src="https://i.ibb.co/Kq83Shw/main.png" width="233" /><img  src="https://i.ibb.co/8cQSY4Y/detail-1.png" width="230"/><img src="https://i.ibb.co/YXk72zq/detail-2.png" width="229.5" />
+
+<img src="https://i.ibb.co/287bmgk/search.png" width="230" /><img src="https://i.ibb.co/2vsK4GS/search-2.png" width="229.5" /><img src="https://i.ibb.co/H4JdQHH/menu.png" width="231" />
+
+<img src="https://i.ibb.co/ykWgy8q/main-dark.png" width="226.5" /><img src="https://i.ibb.co/wCB5w1z/add-note.png" width="230" /><img src="https://i.ibb.co/mHFDyKF/main-delete-note.png" width="230" />
+
+## License
+
+This project is licensed under the  [MIT License](https://github.com/crncck/Notes-App/blob/main/LICENSE).
