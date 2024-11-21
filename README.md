@@ -1,6 +1,10 @@
 # Notes App
 
-A colorful and user-friendly note-taking app with light and dark theme support. Organize your tasks, thoughts, and ideas with a sleek and modern interface.
+A colorful and user-friendly note-taking app with light and dark theme support.
+
+#### App Demonstration
+
+<img src="/assets/demo.gif" width="280"/>
 
 ## Features
 
@@ -79,6 +83,7 @@ src/
 - **[React Navigation](https://reactnavigation.org/)**: Manages seamless navigation between **HomeScreen** (notes list) and **DetailScreen** (view/edit note details).
 - **[Context API](https://react.dev/reference/react/Context)**: Provides a global context for accessing shared functionality and data, such as handling note-related actions (e.g., adding/deleting/editing).
 - **[Masonry Flashlist](https://shopify.github.io/flash-list/docs/masonry-flash-list)**: Used to display notes in a visually appealing **masonry grid layout** with high performance.
+- **[React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)**: Used for adding stylish and scalable icons for buttons and actions within the app.
 
 ## Screenshots
 
@@ -87,11 +92,10 @@ src/
 
 
 ### App Screens
-<img src="https://i.ibb.co/Kq83Shw/main.png" width="233" /><img  src="https://i.ibb.co/8cQSY4Y/detail-1.png" width="230"/><img src="https://i.ibb.co/YXk72zq/detail-2.png" width="229.5" />
 
-<img src="https://i.ibb.co/287bmgk/search.png" width="230" /><img src="https://i.ibb.co/2vsK4GS/search-2.png" width="229.5" /><img src="https://i.ibb.co/H4JdQHH/menu.png" width="231" />
+<img alt="Home Screen" src="https://i.ibb.co/ZTHnN1h/home.png" width="250" title="Home Screen"/><img src="https://i.ibb.co/DCWn80V/detail-1.png" width="250" title="Detail Screen"/><img src="https://i.ibb.co/wwp8Gjz/search.png" width="250" title="Search Feature"/><img src="https://i.ibb.co/Fnd2XLW/delete.png" width="250" title="Delete Feature"/>
 
-<img src="https://i.ibb.co/ykWgy8q/main-dark.png" width="226.5" /><img src="https://i.ibb.co/wCB5w1z/add-note.png" width="230" /><img src="https://i.ibb.co/mHFDyKF/main-delete-note.png" width="230" />
+<img src="https://i.ibb.co/pjVYLNZ/menu.png" width="250" title="Menu Feature"/><img src="https://i.ibb.co/qmgcQW3/dark.png" width="250" title="Dark Mode" /><img src="https://i.ibb.co/xGqGhtx/add-note.png" width="250" title="Add Note Feature"/><img src="https://i.ibb.co/RgnmDZk/delete-all.png" width="250" title="Delete All Feature"/> 
 
 ## License
 
