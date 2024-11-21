@@ -93,9 +93,13 @@ src/
 
 ### App Screens
 
-<img alt="Home Screen" src="https://i.ibb.co/ZTHnN1h/home.png" width="250" title="Home Screen"/><img src="https://i.ibb.co/DCWn80V/detail-1.png" width="250" title="Detail Screen"/><img src="https://i.ibb.co/wwp8Gjz/search.png" width="250" title="Search Feature"/><img src="https://i.ibb.co/Fnd2XLW/delete.png" width="250" title="Delete Feature"/>
+<img alt="Home Screen" src="https://i.ibb.co/ZTHnN1h/home.png" width="300" title="Home Screen"/><img src="https://i.ibb.co/DCWn80V/detail-1.png" width="300" title="Detail Screen"/>
 
-<img src="https://i.ibb.co/pjVYLNZ/menu.png" width="250" title="Menu Feature"/><img src="https://i.ibb.co/qmgcQW3/dark.png" width="250" title="Dark Mode" /><img src="https://i.ibb.co/xGqGhtx/add-note.png" width="250" title="Add Note Feature"/><img src="https://i.ibb.co/RgnmDZk/delete-all.png" width="250" title="Delete All Feature"/> 
+<img src="https://i.ibb.co/wwp8Gjz/search.png" width="300" title="Search Feature"/><img src="https://i.ibb.co/Fnd2XLW/delete.png" width="300" title="Delete Feature"/>
+
+<img src="https://i.ibb.co/pjVYLNZ/menu.png" width="300" title="Menu Feature"/><img src="https://i.ibb.co/qmgcQW3/dark.png" width="300" title="Dark Mode" />
+
+<img src="https://i.ibb.co/xGqGhtx/add-note.png" width="300" title="Add Note Feature"/><img src="https://i.ibb.co/RgnmDZk/delete-all.png" width="300" title="Delete All Feature"/> 
 
 ## License
 
